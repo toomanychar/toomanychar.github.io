@@ -93,7 +93,16 @@
 
 
 
-
+	<!-- TODO: Replace with better preload system -->
+	<link rel="preload" href="images/wall.jpg" as="image">
+	<link rel="preload" href="images/1/00.png" as="image">
+	<link rel="preload" href="images/1/01.png" as="image">
+	<link rel="preload" href="images/1/10.png" as="image">
+	<link rel="preload" href="images/1/11.png" as="image">
+	<link rel="preload" href="images/2/00.png" as="image">
+	<link rel="preload" href="images/2/01.png" as="image">
+	<link rel="preload" href="images/2/10.png" as="image">
+	<link rel="preload" href="images/2/11.png" as="image">
 
 
 
@@ -118,7 +127,7 @@
 	<br>
 	<!-- Text -->
 	<center>
-		<p id="text">TextTextTextTextText</p>
+		<p id="text">Da oben hängt eine kleine Box. Ich komme aber nicht ran.</p>
 	</center>
 	<!-- JS -->
 	<script>
@@ -128,6 +137,7 @@
 	if (left_riddle == 1 && right_riddle == 1) {
 		document.getElementById("up_button").href = "11.5_Crate.html"
 		document.getElementById("up_button").removeAttribute("disabled", "")
+		document.getElementById("text").innerHTML = "Die Box ist gesunken, jetzt kann ich sie erreichen."
 	}
 	</script>
 
